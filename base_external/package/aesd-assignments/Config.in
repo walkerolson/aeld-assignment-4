@@ -1,6 +1,7 @@
 
 config BR2_PACKAGE_AESD_ASSIGNMENTS
 	bool "aesd-assignments"
+	depends on BR2_PACKAGE_BUSYBOX
 	help
-	  Includes the writer executable, finder.sh and tester.sh in the kernel image.
-	  Used to understand buildroot external trees and package builds.
+	  Builds and installs the Assignment 3 writer, finder, and tester
+	  utilities into the target root filesystem.
